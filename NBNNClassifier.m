@@ -117,6 +117,8 @@ else
         ACC = (C(1,1)+C(2,2)+C(3,3)) / size(predicted,2);
         ERR = size(predicted,2) - (C(1,1)+C(2,2)+C(3,3));
         
+        SC.C = C;
+        
         %error('IT MUST BE ONE OR THE OTHER.  Confusion matrix is not 2-2.');
         %ACC = (   C(2,2)+C(3,3)  )  / size(predicted,2)  ;
         %ERR = size(predicted,2) - (C(2,2)+C(3,3));
